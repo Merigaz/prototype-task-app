@@ -27,11 +27,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex flex-row justify-center bg-blue-200 text-4xl text-black">
+        <header className="flex flex-row justify-center bg-fuchsia-200 text-4xl text-black ">
           <div className=" text-4xl text-black">Header</div>
         </header>
         {children}
-        <footer className="flex flex-row justify-center bg-blue-200 text-4xl text-black">
+        <footer className="flex flex-row justify-center bg-fuchsia-200 text-4xl text-black ">
           <div className=" text-4xl text-black">footer</div>
         </footer>
       </body>

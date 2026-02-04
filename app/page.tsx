@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
+import EisenhowerMatrix from "./components/EisenhowerMatrix";
 export default function Home() {
   const [OpenJobList, setOpenJobList] = useState(false);
   function handleOpenJobList() {
     if (OpenJobList) {
       setOpenJobList(false);
-    } else
-    {
+    } else {
       setOpenJobList(true);
     }
   }
@@ -14,39 +14,21 @@ export default function Home() {
     setOpenJobList(false);
   }
   return (
-    <main className="grow grid grid-cols-2">
+    <main className="grow">
+      
       {OpenJobList ? (
         <div
           onClick={handleCloseJobList}
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center size-64 bg-gray-700"
         >
           Joblist
-          <div className="border-2 border-blue-400">
-            Task 1
-          </div>
-          <div className="border-2 border-blue-400">
-            Task 2
-          </div>
-          <div className="border-2 border-blue-400">
-            Task 3
-          </div>
-          <div className="border-2 border-blue-400">
-            Task 4
-          </div>
+          <div className="border-2 border-blue-400">Task 1</div>
+          <div className="border-2 border-blue-400">Task 2</div>
+          <div className="border-2 border-blue-400">Task 3</div>
+          <div className="border-2 border-blue-400">Task 4</div>
         </div>
       ) : null}
-      <div className="bg-green-200 text-black flex justify-center items-center">
-        Hacer
-      </div>
-      <div className="bg-blue-200 text-black flex justify-center items-center">
-        Decidir
-      </div>
-      <div className="bg-amber-200 text-black flex justify-center items-center">
-        Delegar
-      </div>
-      <div className="bg-gray-200 text-black flex justify-center items-center">
-        Eliminar
-      </div>
+      <EisenhowerMatrix />
       <button
         type="button"
         onClick={handleOpenJobList}
@@ -54,6 +36,8 @@ export default function Home() {
       >
         Tareas
       </button>
+      
     </main>
+
   );
 }

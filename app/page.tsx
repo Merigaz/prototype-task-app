@@ -3,6 +3,7 @@ import { useState } from "react";
 import EisenhowerMatrix from "./components/EisenhowerMatrix";
 export default function Home() {
   const [OpenJobList, setOpenJobList] = useState(false);
+  const temp = {};
   function handleOpenJobList() {
     if (OpenJobList) {
       setOpenJobList(false);
@@ -15,7 +16,6 @@ export default function Home() {
   }
   return (
     <main className="grow">
-      
       {OpenJobList ? (
         <div
           onClick={handleCloseJobList}
@@ -36,8 +36,6 @@ export default function Home() {
       >
         Tareas
       </button>
-      
     </main>
-
   );
 }

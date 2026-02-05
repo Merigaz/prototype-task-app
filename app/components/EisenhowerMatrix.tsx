@@ -1,20 +1,18 @@
 export default function EisenhowerMatrix() {
   return (
-    
-      <div className="grid grid-cols-2 ">
-        <div className="bg-green-200 text-black flex justify-center items-center h-full">
-          Hacer
-        </div>
-        <div className="bg-blue-200 text-black flex justify-center items-center h-full">
-          Decidir
-        </div>
-        <div className="bg-amber-200 text-black flex justify-center items-center h-">
-          Delegar
-        </div>
-        <div className="bg-gray-200 text-black flex justify-center items-center h-">
-          Eliminar
-        </div>
+    <div className="grid grid-cols-2 min-h-full">
+      <div className="matrix-v-line"></div>
+      <div className="matrix-h-line"></div>
+      <div className=" text-black flex justify-center items-center">Hacer</div>
+      <div className="0 text-black flex justify-center items-center">
+        Decidir
       </div>
-    
+      <div className=" text-black flex justify-center items-center">
+        Delegar
+      </div>
+      <div className=" text-black flex justify-center items-center">
+        Eliminar
+      </div>
+    </div>
   );
 }

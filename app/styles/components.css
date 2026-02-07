@@ -1,8 +1,8 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
 
 @layer components {
-  .btn-secondary {
-    @apply bg-gray-500 text-white p-4 rounded hover:bg-gray-600;
+  .quadrant-matrix {
+    @apply text-cool-white flex justify-start items-start tracking-widest;
   }
 }
 
@@ -39,4 +39,19 @@
   box-shadow: 0 0 8px rgba(157, 0, 255, 0.4);
   transform: translateY(-50%);
   z-index: 10;
+}
+.intersection-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 245, 255, 0.15) 0%,
+    transparent 70%
+  );
+  z-index: 5;
+  filter: blur(10px);
 }

@@ -6,6 +6,9 @@
   --color-luminous-cyan: #00f5ff;
   --color-luminous-violet: #9d00ff;
   --color-cool-white: #f8fafc;
+  --color-deep-magenta: #ff00ff;
+  --color-soft-teal: #2dd4bf;
+  --color-light-gold: #d0bb95;
 }
 
 body {
@@ -17,4 +20,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0a0b10;
+  background-image:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(157, 0, 255, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(0, 245, 255, 0.05) 0%,
+      transparent 40%
+    );
 }

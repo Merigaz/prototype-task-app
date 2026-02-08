@@ -12,7 +12,6 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,4 +30,7 @@ body {
       rgba(0, 245, 255, 0.05) 0%,
       transparent 40%
     );
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

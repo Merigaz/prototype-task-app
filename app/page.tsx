@@ -15,7 +15,7 @@ export default function Home() {
     setOpenJobList(false);
   }
   return (
-    <main className="grow">
+    <main className="flex-1 p-4 relative overflow-hidden">
       {OpenJobList ? (
         <div
           onClick={handleCloseJobList}

@@ -10,7 +10,10 @@
   --color-soft-teal: #2dd4bf;
   --color-light-gold: #d0bb95;
 }
-
+@theme inline{
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
 body {
   display: flex;
   flex-direction: column;

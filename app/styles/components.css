@@ -2,7 +2,7 @@
 
 @layer components {
   .quadrant-matrix {
-    @apply text-cool-white flex justify-start items-start tracking-widest;
+    @apply text-cool-white flex justify-start items-start tracking-widest p-4;
   }
 }
 

@@ -3,12 +3,12 @@ import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./styles/globals.css";
 
 const jakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-font-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
 const spaceGrotesk = Space_Grotesk({
-  variable: "--font-font-display",
+  variable: "--font-display",
   subsets: ["latin"],
 });
 

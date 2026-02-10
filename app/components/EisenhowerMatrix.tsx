@@ -15,8 +15,8 @@ export default function EisenhowerMatrix() {
           </span>
         </div>
       </section>
-      <section className="quadrant-matrix justify-end">
-        <div className="flex flex-col items-end">
+      <section className="quadrant-matrix">
+        <div className="flex flex-col">
           <h4 className="text-sm font-black text-soft-teal flex items-center gap-2 uppercase tracking-widest font-display text-right">
             <span className="size-1.5 rounded-full bg-soft-teal shadow-[0_0_10px_#2DD4BF]"></span>{" "}
             STRATEGIZE
@@ -37,8 +37,8 @@ export default function EisenhowerMatrix() {
           </span>
         </div>
       </section>
-      <section className="quadrant-matrix justify-end">
-        <div className="flex flex-col items-end">
+      <section className="quadrant-matrix grow">
+        <div className="flex flex-col self-start justify-self-end">
           <h4 className="text-sm font-black text-deep-magenta flex items-center gap-2 uppercase tracking-widest font-display text-right">
             <span className="size-1.5 rounded-full bg-deep-magenta shadow-[0_0_10px_#FF00FF]"></span>
             ARCHIVE
@@ -47,6 +47,7 @@ export default function EisenhowerMatrix() {
             Eliminate Noise
           </span>
         </div>
+        <div className="grow justify-self-center"></div>
       </section>
     </div>
   );

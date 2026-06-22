@@ -10,7 +10,7 @@ export default function EisenhowerMatrix() {
             <span className="size-1.5 rounded-full bg-luminous-cyan shadow-[0_0_10px_#00F5FF]"></span>
             EXECUTE
           </h4>
-          <span className="text-[8px] font-black text-luminous-cyan/40 uppercase tracking-[0.2em]">
+          <span className="text-[8px] font-black text-luminous-cyan/40 uppercase tracking-[0.2em] antialiased font-display">
             Urgent &amp; Important
           </span>
         </div>
@@ -21,7 +21,7 @@ export default function EisenhowerMatrix() {
             <span className="size-1.5 rounded-full bg-soft-teal shadow-[0_0_10px_#2DD4BF]"></span>{" "}
             STRATEGIZE
           </h4>
-          <span className="text-[8px] font-black text-soft-teal/40 uppercase tracking-[0.2em]">
+          <span className="text-[8px] font-black text-soft-teal/40 uppercase tracking-[0.2em] antialiased font-display">
             Future Focused
           </span>
         </div>
@@ -32,22 +32,21 @@ export default function EisenhowerMatrix() {
             <span className="size-1.5 rounded-full bg-luminous-violet shadow-[0_0_10px_#9D00FF]"></span>
             ASSIGN
           </h4>
-          <span className="text-[8px] font-black text-luminous-violet/40 uppercase tracking-[0.2em]">
+          <span className="text-[8px] font-black text-luminous-violet/40 uppercase tracking-[0.2em] antialiased font-display">
             Delegate Action
           </span>
         </div>
       </section>
-      <section className="quadrant-matrix grow">
-        <div className="flex flex-col self-start justify-self-end">
+      <section className="quadrant-matrix">
+        <div className="flex flex-col">
           <h4 className="text-sm font-black text-deep-magenta flex items-center gap-2 uppercase tracking-widest font-display text-right">
             <span className="size-1.5 rounded-full bg-deep-magenta shadow-[0_0_10px_#FF00FF]"></span>
             ARCHIVE
           </h4>
-          <span className="text-[8px] font-black text-deep-magenta/40 uppercase tracking-[0.2em]">
+          <span className="text-[8px] font-black text-deep-magenta/40 uppercase tracking-[0.2em] antialiased font-display">
             Eliminate Noise
           </span>
         </div>
-        <div className="grow justify-self-center"></div>
       </section>
     </div>
   );

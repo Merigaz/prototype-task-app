@@ -1,0 +1,36 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": "TitleMatrix+Username",
+      "title": "Matrix Proyecto 1",
+      "description": "No idea",
+      "quadrants": [
+        {
+          "id": "quadrant_1+username",
+          "title": "Execute",
+          "quadrant": 1,
+          "tasks": { "matrix": [], "tasks": [] }
+        },
+        {
+          "id": "quadrant_2+username",
+          "title": "Strategize",
+          "quadrant": 2,
+          "tasks": { "matrix": [], "tasks": [] }
+        },
+        {
+          "id": "quadrant_3+username",
+          "title": "Assign",
+          "quadrant": 3,
+          "tasks": { "matrix": [], "tasks": [] }
+        },
+        {
+          "id": "quadrant_4+username",
+          "title": "Archive",
+          "quadrant": 4,
+          "tasks": { "matrix": [], "tasks": [] }
+        }
+      ]
+    }
+  ]
+}

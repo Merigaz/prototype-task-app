@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./styles/globals.css";
-import { DragDropManager } from "@dnd-kit/react";
 
 const jakartaSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -31,10 +30,7 @@ export default function RootLayout({
         <header className="flex flex-row justify-center bg-fuchsia-200 text-4xl text-black ">
           <div className=" text-4xl text-black">Header</div>
         </header>
-        <DragDropManager>
-
         {children}
-        </DragDropManager>
         <footer className="flex flex-row justify-center bg-fuchsia-200 text-4xl text-black ">
           <div className=" text-4xl text-black">footer</div>
         </footer>

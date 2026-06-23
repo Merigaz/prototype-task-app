@@ -1,9 +1,12 @@
 "use client";
-import { DragDropManager } from "@dnd-kit/react";
 import { useState } from "react";
 import EisenhowerMatrix from "./components/EisenhowerMatrix";
-import TaskList from "./components/TaskList";
+import { DragDropProvider } from "@dnd-kit/react";
+import AllTaskListCard from "./components/AllTaskListCard";
+import matrixApi from "./utilities/matrix.json";
+
 export default function Home() {
+  const [parent, setParent] = useState(undefined);
   const [OpenJobList, setOpenJobList] = useState(false);
   function handleOpenJobList() {
     if (OpenJobList) {
@@ -16,22 +19,12 @@ export default function Home() {
     setOpenJobList(false);
   }
   return (
-    <main className="flex-1 p-4 relative overflow-hidden">
-      
-        {OpenJobList ? (
-          <div
-            onClick={handleCloseJobList}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center size-64 bg-gray-700"
-          >
-            Joblist
-            <div className="border-2 border-blue-400">Task 1</div>
-            <div className="border-2 border-blue-400">Task 2</div>
-            <div className="border-2 border-blue-400">Task 3</div>
-            <div className="border-2 border-blue-400">Task 4</div>
-          </div>
-        ) : null}
-        <TaskList />
-        <EisenhowerMatrix />
+    <main className="flex-1 relative overflow-hidden">
+      <DragDropProvider
+       
+      >
+        {OpenJobList ? <AllTaskListCard /> : null}
+        <EisenhowerMatrix response={matrixApi.data} />
         <button
           type="button"
           onClick={handleOpenJobList}
@@ -39,7 +32,7 @@ export default function Home() {
         >
           Tareas
         </button>
-      
+      </DragDropProvider>
     </main>
   );
 }

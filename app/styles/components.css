@@ -2,7 +2,7 @@
 
 @layer components {
   .quadrant-matrix {
-    @apply text-cool-white flex items-start tracking-widest p-4;
+    @apply text-cool-white flex items-start tracking-widest p-4
   }
 }
 
@@ -54,4 +54,18 @@
   );
   z-index: 5;
   filter: blur(10px);
+}
+.task-card-bg {
+  background-color: #0a0b10;
+  /* background-image:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(157, 0, 255, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(0, 245, 255, 0.05) 0%,
+      transparent 40%
+    ); */
 }

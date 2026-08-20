@@ -1,11 +1,7 @@
-import { useSortable } from "@dnd-kit/react/sortable";
-import { useDroppable } from "@dnd-kit/react";
+"use client";
 
 export default function Quadrant({ data, children }: any) {
   const dataquadrants = data;
-  console.log(dataquadrants, "caca1");
-  const { isDropTarget, ref } = useDroppable({ id: "droppable" });
-
   switch (dataquadrants.quadrant) {
     case 1:
       return (
@@ -19,30 +15,27 @@ export default function Quadrant({ data, children }: any) {
               Urgent &amp; Important
             </span>
           </div>
-          <div ref={ref} className={isDropTarget ? "w-full h-full" : "w-full h-full z-50"}>
-            {children}
-          </div>
         </section>
       );
+
     case 2:
       return (
-        <section className="quadrant-matrix" key={dataquadrants.id} ref={ref}>
+        <section className="quadrant-matrix" key={dataquadrants.id}>
           <div className="flex flex-col">
             <h4 className="text-sm font-black text-soft-teal flex items-center gap-2 uppercase tracking-widest font-display text-right">
-              <span className="size-1.5 rounded-full bg-soft-teal shadow-[0_0_10px_#2DD4BF]"></span>{" "}
+              <span className="size-1.5 rounded-full bg-soft-teal shadow-[0_0_10px_#2DD4BF]"></span>
               STRATEGIZE
             </h4>
             <span className="text-[8px] font-black text-soft-teal/40 uppercase tracking-[0.2em] antialiased font-display">
               Future Focused
             </span>
           </div>
-          {children}
         </section>
       );
 
     case 3:
       return (
-        <section className="quadrant-matrix" key={dataquadrants.id} ref={ref}>
+        <section className="quadrant-matrix" key={dataquadrants.id}>
           <div className="flex flex-col">
             <h4 className="text-sm font-black text-luminous-violet flex items-center gap-2 uppercase tracking-widest font-display">
               <span className="size-1.5 rounded-full bg-luminous-violet shadow-[0_0_10px_#9D00FF]"></span>
@@ -52,12 +45,12 @@ export default function Quadrant({ data, children }: any) {
               Delegate Action
             </span>
           </div>
-          {children}
         </section>
       );
+
     case 4:
       return (
-        <section className="quadrant-matrix" key={dataquadrants.id} ref={ref}>
+        <section className="quadrant-matrix" key={dataquadrants.id}>
           <div className="flex flex-col">
             <h4 className="text-sm font-black text-deep-magenta flex items-center gap-2 uppercase tracking-widest font-display text-right">
               <span className="size-1.5 rounded-full bg-deep-magenta shadow-[0_0_10px_#FF00FF]"></span>
@@ -67,8 +60,10 @@ export default function Quadrant({ data, children }: any) {
               Eliminate Noise
             </span>
           </div>
-          {children}
         </section>
       );
+
+    default:
+      return null;
   }
 }

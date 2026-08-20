@@ -1,4 +1,5 @@
 "use client";
+
 import Quadrant from "./Quadrant";
 export default function EisenhowerMatrix(response: any) {
   const data = response.response;
